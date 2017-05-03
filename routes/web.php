@@ -43,6 +43,23 @@ Route::get('/env', function () {
 });
 
 
+Route::post('/comments', function () {
+	echo "<pre>";
+	print_r($_POST);
+	echo "</pre>";
+    return;
+});
+
+/*
+Route::match(['get','post'],'/comments', function () {
+	echo "<pre>";
+	print_r($_POST);
+	echo "</pre>";
+   //return;
+});
+*/
+
+
 
 
 
