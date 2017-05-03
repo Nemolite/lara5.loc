@@ -34,8 +34,15 @@ Route::get('/env', function () {
 	echo "<pre>";
 	print_r($_ENV);
 	echo "</pre>";
+	//echo config('app.locale');
+	echo Config::set('app.locale','ru');// установка насройки, при этом в файле не будут внесены изменения
+	echo Config::get('app.locale');
+	echo "<br />";
+	echo env('APP_NAME');
  return;
 });
+
+
 
 
 
