@@ -10,6 +10,7 @@
 	<form action="/comments" method="post">
 		<p>Name</p><br />
 		<input type="text" name="name"><br /><br />
+		<input type="hidden" name="_method" value="PUT">
 		<input type="submit" name="submit" value="add"><br />
 	</form>
 </div>				

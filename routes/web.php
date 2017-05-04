@@ -18,7 +18,7 @@
 //Route::get('/', function () {
   //return view('index');
 //});
-
+/*
 Route::get('/','IndexController@index');
 
 
@@ -50,7 +50,7 @@ Route::post('/comments', function () {
     return;
 });
 
-/*
+
 Route::match(['get','post'],'/comments', function () {
 	echo "<pre>";
 	print_r($_POST);
@@ -58,6 +58,13 @@ Route::match(['get','post'],'/comments', function () {
    //return;
 });
 */
+Route::get('/test/{id}/{cat}', function ($id,$cat) {  // передача параметра
+	echo "<h1>";
+	echo "тестовый вывод";
+	echo $id.'|'.$cat;
+	echo "</h1>";
+ return;
+});
 
 
 
