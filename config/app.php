@@ -163,6 +163,14 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+        //admin
+
+        SleepingOwl\Admin\Providers\SleepingOwlServiceProvider::class,
+
+        //Exceptions for debug
+
+        GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
+
         /*
          * Package Service Providers...
          */
@@ -176,6 +184,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        //admin
+        App\Providers\AppServiceProvider::class,
 
     ],
 

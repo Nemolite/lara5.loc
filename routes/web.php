@@ -11,3 +11,7 @@
 |
 */
 Route::get('/', 'UserController@showProfile');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
